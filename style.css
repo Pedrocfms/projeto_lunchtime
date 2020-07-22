@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+.container .login2 {
+    display: grid;
+    align-items: center;
+    justify-content: right;
+}
+
+.login2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: #FAA916;
+}
+
+.login2 ul li {
+    display: inline-block;
+}
+
+.login2 a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    padding: 2vh 5vw 2vh 5vw;
+
+}
+
+.login2 a:hover {
+    background-color: #6D676E;
+    color: #1B1B1E;
+}
+
+.container .login {
+    display: none;
+}
+
+.login {
+    display: none;
+}
+
+.login a {
+    display: none;
+}
+
+.container .logo {
+    display: grid;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: #FAA916;
+}
+
+.logo img {
+    position: absolute;
+    padding-left: 5vw;
+    padding-top: 4vh;
+}
+
+.container main {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(img/fundodesk.svg);
+    background-size: cover;
+}
+
+.cardapio {
+    display: none;
+}
+
+.container .rodape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.rodape {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background: #96031A;
+}
+
+.rodape a i {
+    font-size: 1rem;
+    color: white;
+    margin: 0 7vw 0 7vw;
+}
+
+.rodape p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 0.5rem;
+    padding-left: 5vw;
+}
+
+.container .menu {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.menu a {
+    display: none;
+}
+
+
+
+
+
+/* Mobile view */
+
+@media (max-width: 450px){
+
+    body {
+        margin: 0;
+        height: 100vh;
+        background-color: #FAA916;
+    }
+
+    .container {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 20vh 70vh 10vh;
+    }
+
+    .container .login {
+        display: grid;
+        align-items: center;
+        justify-content: right;
+    }
+    
+    .login {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background: #FAA916;
+    }
+    
+    .login a {
+        display: grid;
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+        display: inline;
+        padding-right: 10vw;
+    }
+
+    .container .login2 {
+        display: none;
+    }
+
+    .login2 {
+        display: none;
+    }
+
+    .login a {
+        display: none;
+    }
+
+    .container main {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: white;
+    border-radius: 80px 0 0 0;
+    }
+
+    .cardapio {
+        display: grid;
+    }
+
+    .cardapio a {
+        padding: 2vh 0 2vh 0;
+    }
+
+    .container .rodape {
+        display: none;
+    }
+
+    .rodape {
+        display: none;
+    }
+
+    .rodape a {
+        display: none;
+    }
+
+    .container .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background: #96031A;
+    }
+    
+    .menu a {
+        display: flex;
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: white;
+        padding: 0 12vw 0 12vw;
+    }
+
+    
+
+    
+
+}
